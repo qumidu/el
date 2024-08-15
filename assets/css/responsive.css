@@ -56,4 +56,8 @@
   #about .col-lg-6 img {
     margin-bottom: 50px;
   }
+
+  #blog .col-md-4 + .col-md-4 .blog-post {
+    margin-top: 50px;
+  }
 }

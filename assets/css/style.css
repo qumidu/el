@@ -461,7 +461,7 @@ img {
 .................... blog ...................
 ==================== o0o ================= */
 #blog .blog-post img {
-  width: 415px;
+  width: 100%;
   height: 275px;
   object-fit: cover;
 }

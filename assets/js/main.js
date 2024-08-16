@@ -60,3 +60,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const counterSection = document.getElementById("counter");
   observer.observe(counterSection);
 });
+
+// owl-carousel
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  item: 2,
+  margin: 30,
+  autoplay: true,
+  autoplayTimeout: 2000,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    900: {
+      items: 2,
+    },
+  },
+});

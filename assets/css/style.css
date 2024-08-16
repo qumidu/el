@@ -375,26 +375,56 @@ img {
 /* ================= o0o ====================
 ................... review ..................
 ==================== o0o ================= */
+.review {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  gap: 30px;
+  border: 2px solid var(--c-brand);
+  border-radius: var(--border-radius);
+}
+
+.review .review-avatar img {
+  width: 130px;
+  height: 130px;
+  min-width: 130px;
+  min-height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--c-brand);
+}
+
+.review .review-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .review small {
   font-weight: 600;
   text-transform: uppercase;
   color: var(--c-brand);
 }
 
-.review-head {
-  position: relative;
+.owl-dots {
+  text-align: center;
 }
 
-.review-head::after {
-  content: "";
-  width: 28px;
-  height: 28px;
-  position: absolute;
-  bottom: -14px;
-  background-color: #fff;
-  transform: rotate(45deg);
+.owl-dots .owl-dot {
+  display: inline-block;
+  vertical-align: top;
+  width: 12px;
+  height: 12px;
+  background: transparent;
+  border: 1px solid var(--c-dark) !important;
+  transition: ease all 0.55s;
+  border-radius: 50%;
+  margin: 25px 4px;
 }
 
+.owl-dots .owl-dot.active {
+  background: var(--c-dark);
+}
 /* ================= o0o ====================
 .................... team ...................
 ==================== o0o ================= */

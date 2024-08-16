@@ -236,6 +236,7 @@ img {
   width: 635px;
   height: 705px;
   object-fit: cover;
+  object-position: 73% 50%;
   border-radius: var(--border-radius);
 }
 
